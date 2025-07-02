@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Link Collector</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Save Section -->
+      <section class="card" id="save-section">
+        <h2 class="section-title">🔗 Save Current Link</h2>
+
+        <div class="current-link">
+          <div id="current-title" class="link-title">Loading title...</div>
+          <div id="current-url" class="link-url">Loading URL...</div>
+        </div>
+
+        <div class="form-group">
+          <label for="category-select">Select Category</label>
+          <select id="category-select"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="new-category">Or Add New Category</label>
+          <input
+            type="text"
+            id="new-category"
+            placeholder="Enter category name"
+          />
+        </div>
+
+        <button class="primary-btn" id="save-btn">Save Link</button>
+      </section>
+
+      <!-- Links Section -->
+      <section class="card" id="links-section">
+        <h2 class="section-title">📂 Saved Links</h2>
+
+        <div class="form-group">
+          <label for="view-category-select">View Category</label>
+          <select id="view-category-select"></select>
+        </div>
+
+        <ul id="links-list" class="links-list"></ul>
+      </section>
+
+      <!-- Backup Section -->
+      <section class="card" id="backup-section">
+        <h2 class="section-title">📁 Backup & Restore</h2>
+
+        <div class="button-row">
+          <button class="secondary-btn" id="export-btn">⬇️ Export</button>
+          <input type="file" id="import-file" accept=".json" hidden />
+          <button class="secondary-btn" id="import-btn">⬆️ Import</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
