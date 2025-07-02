@@ -19,7 +19,19 @@ Pocket Links is a simple, elegant Chrome extension that lets you save, categoriz
 
 ## Directory Structure
 
-> Will add soon
+```md
+Directory structure:
+└── saumyajeet-varma-pocket-links-extension/
+    ├── README.md
+    ├── PRIVACY.md
+    └── Extension/
+        ├── manifest.json
+        └── popup/
+            ├── popup.css
+            ├── popup.html
+            └── popup.js
+
+```
 
 ## Installation
 
